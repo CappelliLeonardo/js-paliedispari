@@ -13,3 +13,19 @@
 // Consigli del giorno
 // 1. Scriviamo sempre in italiano i passaggi che vogliamo fare
 // 2. Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
+
+
+// // collegare una variabile che contiene l'input dell'user in html
+// const userLetter = document.getElementById('user-letters').value;
+
+// console.log (' stampa', userLetter, typeof userLetter);
+
+
+const verifica = document.querySelector("button");
+
+verifica.addEventListener("click", function(){
+    //input del dato inserito da user
+    const word = document.querySelector("input").value;
+
+    console.log('word', word, typeof word);
+});

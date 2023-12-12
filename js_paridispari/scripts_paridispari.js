@@ -34,6 +34,8 @@ button.addEventListener("click" , function (){
 });
 
 
+
+
 function pari (numero) {
     if ( (numero) % 2 == 0 ){
         return ('pari')
@@ -44,6 +46,7 @@ function pari (numero) {
     }
 
 };
+
 
 
     // somma dei due numeri randomici
