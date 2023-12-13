@@ -21,11 +21,56 @@
 // console.log (' stampa', userLetter, typeof userLetter);
 
 
-const verifica = document.querySelector("button");
+// CHIEDERE ALL'UTENTE DI INSERIRE UNA PAROLA 
 
-verifica.addEventListener("click", function(){
-    //input del dato inserito da user
-    const word = document.querySelector("input").value;
+const userWord = prompt ('Inserisci una parola:');
+console.log ('userWord', userWord, typeof userWord);
 
-    console.log('word', word, typeof word);
-});
+let reverseWord = '';
+// IN QUESTO MODO STAMPIAMO AL CONTRARIO IN CONSOLE LA PAROLA
+for (let i = userWord.length - 1; i >= 0 ; i--){
+    console.log(userWord[i]);
+
+    reverseWord += userWord[i];
+}
+
+console.log( 'reverseWord' , reverseWord, typeof reverseWord);
+
+if ( userWord === reverseWord){
+    alert (userWord + 'è una parola palindroma');
+}
+else{
+    alert (userWord + ' NON è una parola palindroma');
+}
+
+
+// function isPalindrome(word){
+//     const parolaAlContrario = reverseWord (word);
+//     console.log ('parolaAlContrario', parolaAlContrario, typeof parolaAlContrario);
+
+//     if (word === parolaAlContrario)
+//         // console.log (word + 'è una parola palindroma');
+
+//         return true;
+//     else{
+//         console.log (word + 'non è una parola palindroma');
+
+//         return false;
+//     }
+// }
+
+// function reverseWord (wordToBeReversed) {
+//     let reverseWord = '';
+
+//     for (let i = wordToBeReversed.length - 1; i >= 0; i--){
+//         // console.log(word[i]);
+
+//         reverseWord += wordToBeReversed[i];
+//     }
+
+//     return reverseWord;
+// }
+
+
+
+
